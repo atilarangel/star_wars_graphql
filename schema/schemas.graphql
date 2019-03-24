@@ -1,0 +1,26 @@
+type Query {
+  getHumans: [human]
+  #Some hack, if use id: String! with ! you are saying is obligation to use this arguments.
+  #Else, the front-end can choose what they wanna call
+  # especificHuman(id: String, name: String) : human,
+  # getCharacters: human
+}
+type ships {
+  id: String,
+  name: String,
+  length: Float
+}
+type status {
+  status: String,
+  message: String
+}
+type human {
+  id: String,
+  name: String,
+  friends: [human],
+  appearsIn: [String],
+  homePlanet: String,
+  height: Float,
+  mass: Int,
+  starships: [ships]
+}
