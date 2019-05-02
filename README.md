@@ -65,6 +65,9 @@ const resolvers = {
 ```
 Onde, queries.getHumans é uma função que estou importando de ```queries/queries.js```. O "getHumans" é o cara que anteriormente citei no tópico 1.
 
+Reference:
+  Graphql: https://graphql.org/
+
 
 My socials networks:
 ```
