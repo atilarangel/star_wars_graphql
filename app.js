@@ -4,7 +4,7 @@ const cors = require('cors')
 const { buildSchema } = require('graphql')
 const { importSchema } = require('graphql-import')
 const app = express()
-
+// Import schemas 
 const overall = importSchema('./schema/schemas.graphql')
 const schema = buildSchema(overall)
 

@@ -1,0 +1,26 @@
+type Query {
+  getHumans: [human]
+  # especificHuman(id: String, name: String) : human,
+  # getCharacters: human
+  # Some hack, if use id: String! with ! you are obligating to use this arguments.
+  # Else, the req can choose what they wanna set
+}
+type ships {
+  id: String,
+  name: String,
+  length: Float
+}
+type status {
+  status: String,
+  message: String
+}
+type human {
+  id: String,
+  name: String,
+  friends: [human],
+  appearsIn: [String],
+  homePlanet: String,
+  height: Float,
+  mass: Int,
+  starships: [ships]
+}
